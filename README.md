@@ -2,11 +2,21 @@
 
 PHP class and trait for manage / set / check flags (bitwise operations). You can organize flags into groups.
 
-## Installation
+## Requirements
 
-Just download code.
+- PHP 5.5+
 
-TODO: put it to packagist.
+## Installing
+
+Flags is available through Packagist via Composer
+
+```json
+{
+    "require": {
+        "rodeob/flags": "0.*"
+    }
+}
+```
 
 ## Usage
 
