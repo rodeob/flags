@@ -39,7 +39,7 @@ if ($flags->isFlagSet(SOME_FLAG) {}
 
 Method
 ```php
-function setFlags($flags, $bag = FlagsClass::RBFLAGS_DEFAULT_NAME)
+function setFlags($flags, $bag = FlagsClass::RBFLAGS_DEFAULT_BAG)
 ```
 
 In class:
@@ -57,12 +57,12 @@ $flags->setFlags(SOME_FLAG);
 
 Method:
 ```php
-function areFlagsSet($flags, $bag = FlagsClass::RBFLAGS_DEFAULT_NAME)
+function areFlagsSet($flags, $bag = FlagsClass::RBFLAGS_DEFAULT_BAG)
 ```
 
 and alias:
 ```php
-function isFlagSet($flag, $bag = FlagsClass::RBFLAGS_DEFAULT_NAME)
+function isFlagSet($flag, $bag = FlagsClass::RBFLAGS_DEFAULT_BAG)
 ```
 
 In class:
@@ -89,7 +89,7 @@ if ($this->areFlagsSet(self::SOME_FLAG | self::SOME_OTHER_FLAG2)) {} // false
 
 Method:
 ```php
-function flipFlags($flags, $bag = FlagsClass::RBFLAGS_DEFAULT_NAME)
+function flipFlags($flags, $bag = FlagsClass::RBFLAGS_DEFAULT_BAG)
 ```
 
 In class:
@@ -107,7 +107,7 @@ $flags->flipFlags(SOME_FLAG)
 
 Method:
 ```php
-function unsetFlags($flags, $bag = FlagsClass::RBFLAGS_DEFAULT_NAME)
+function unsetFlags($flags, $bag = FlagsClass::RBFLAGS_DEFAULT_BAG)
 ```
 
 In class:

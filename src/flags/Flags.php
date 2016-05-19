@@ -16,5 +16,5 @@ class Flags
      *
      * @var string
      */
-    const RBFLAGS_DEFAULT_NAME = 'default';
+    const RBFLAGS_DEFAULT_BAG = 'default';
 }

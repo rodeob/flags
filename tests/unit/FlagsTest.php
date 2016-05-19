@@ -24,9 +24,9 @@ class FlagsTest extends \PHPUnit_Framework_TestCase
     {
         $flags = new Flags();
         $flags->setFlags(self::TEST_FLAG1);
-        $this->assertAttributeEquals([\rbFlags\Flags::RBFLAGS_DEFAULT_NAME => 1], 'rbFlagsBag', $flags);
+        $this->assertAttributeEquals([\rbFlags\Flags::RBFLAGS_DEFAULT_BAG => 1], 'rbFlagsBag', $flags);
         $flags->setFlags(self::TEST_FLAG2);
-        $this->assertAttributeEquals([\rbFlags\Flags::RBFLAGS_DEFAULT_NAME => 3], 'rbFlagsBag', $flags);
+        $this->assertAttributeEquals([\rbFlags\Flags::RBFLAGS_DEFAULT_BAG => 3], 'rbFlagsBag', $flags);
 
     }
 

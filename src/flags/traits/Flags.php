@@ -25,7 +25,7 @@ trait Flags
      * @param  string $bag
      * @return self
      */
-    function setFlags($flags, $bag = FlagsClass::RBFLAGS_DEFAULT_NAME)
+    function setFlags($flags, $bag = FlagsClass::RBFLAGS_DEFAULT_BAG)
     {
         $this->rbFlagsBag[$bag] = isset($this->rbFlagsBag[$bag]) ? $this->rbFlagsBag[$bag] | $flags : $flags;
         return $this;
@@ -38,7 +38,7 @@ trait Flags
      * @param  string $bag
      * @return boolean
      */
-    function areFlagsSet($flags, $bag = FlagsClass::RBFLAGS_DEFAULT_NAME)
+    function areFlagsSet($flags, $bag = FlagsClass::RBFLAGS_DEFAULT_BAG)
     {
         if (!isset($this->rbFlagsBag[$bag])) {
             return false;
@@ -53,12 +53,12 @@ trait Flags
      * @param  string $bag
      * @return boolean
      */
-    function isFlagSet($flag, $bag = FlagsClass::RBFLAGS_DEFAULT_NAME)
+    function isFlagSet($flag, $bag = FlagsClass::RBFLAGS_DEFAULT_BAG)
     {
         return $this->areFlagsSet($flag, $bag);
     }
 
-    function flipFlags($flags, $bag = FlagsClass::RBFLAGS_DEFAULT_NAME)
+    function flipFlags($flags, $bag = FlagsClass::RBFLAGS_DEFAULT_BAG)
     {
         $this->rbFlagsBag[$bag] = isset($this->rbFlagsBag[$bag])
             ? $this->rbFlagsBag[$bag] ^ $flags
@@ -73,7 +73,7 @@ trait Flags
      * @param  string $bag
      * @return self
      */
-    function unsetFlags($flags, $bag = FlagsClass::RBFLAGS_DEFAULT_NAME)
+    function unsetFlags($flags, $bag = FlagsClass::RBFLAGS_DEFAULT_BAG)
     {
         if (isset($this->rbFlagsBag[$bag])) {
             $this->rbFlagsBag[$bag] = $this->rbFlagsBag[$bag] & (~$flags);
