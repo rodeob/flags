@@ -12,13 +12,13 @@ TODO: put it to packagist.
 
 This package include class and trait to use it in yours projects.
 
-You can use **rbFlags\Flags** class to extend yours classes in which you want to use flags.
+You can use **rbFlags\Flags** class to extend your class in which you want to use flags.
 
 ```php
 class MyClass extends rbFlags\Flags {}
 ```
 
-Or you use the **rbFlags\traits\Flags** trait in yours clases
+Or you use the **rbFlags\traits\Flags** trait in your class
 
 ```php
 class MyClass
